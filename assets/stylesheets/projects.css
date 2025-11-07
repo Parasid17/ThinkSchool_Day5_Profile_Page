@@ -1,0 +1,159 @@
+/* ------------------------------ */
+/* ------ Universal reset ------ */
+/* ---------------------------- */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* --------------------- */
+/* ------ NavBar ------ */
+/* ------------------- */
+
+.nav_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: #F2EDE6;
+}
+
+
+.nav_section_profile {
+    display: flex;
+    gap: 5px;
+}
+
+
+#nav_section_profile_img {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+
+#nav_section_profile_username {
+    align-content: center;
+    font-size: 25px;
+}
+
+
+#nav_section_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+#nav_section_navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+
+#nav_section_navbar a:nth-child(2)::after {
+    content: "";
+    display: block;
+    width: 0%;
+    border: 1px solid black;
+    border-radius: 1cap;
+    background-color: #000;
+    height: 5px;
+    animation: slide 1s forwards;
+}
+
+
+@keyframes slide {
+    to {
+        width: 100%;
+    }
+}
+
+
+
+/* --------------------------- */
+/* ------ Hero section ------ */
+/* ------------------------- */
+
+#main__prj_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    border: 1px solid black;
+    color: #fff;
+}
+
+
+.card {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 300px;
+    height: 235px;
+    padding: 24px;
+    background-color: #F2EDE6;
+    color: #000;
+    box-shadow: 5px 5px 10px black;
+    transition: transform 0.6s ease;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+.prj_heading {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+
+.prj_desc {
+    margin-bottom: 16px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+
+/* --------------------- */
+/* ------ Footer ------ */
+/* ------------------- */
+
+#footer_container {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+
+#footer_container_copyrights {
+    color: #000;
+}

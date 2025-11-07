@@ -24,8 +24,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    /* background-color: #F2EDE6; */
-    background-color: #a8dadc;
+    background-color: #F2EDE6;
 }
 
 
@@ -93,7 +92,7 @@
     height: calc(100vh - 90px);
     position: sticky;
     top: 90px;
-    background-color: #f5e1fd;
+    background-color: #fff;
 }
 
 
@@ -122,9 +121,8 @@
 
 #main_container {
     padding: 24px;
-    height: calc(100vh - 90px);
-    /* background-color: #F2EDE6; */
-    background-color: #a8dadc;
+    height: calc(100vh - 128px);
+    background-color: #F2EDE6;
     position: relative;
     /* color: #10002b; */
     color: #000;
@@ -141,7 +139,7 @@
 /* --------------------- */
 
 #main_container {
-    padding: 64px;
+    padding: 17px 24px;
 }
 
 #main_container_hero_section {
@@ -219,7 +217,7 @@
 
 
 .main_container_hero_section_work_experience_block_link {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: darkorchid;
     font-size: 16px;
 }
@@ -258,8 +256,13 @@
 
 .main_container_hero_section_courses_name {
     margin-bottom: 8px;
+    list-style-type: symbols();
 }
 
+
+.main_container_hero_section_courses_name::marker {
+    content: "-  ";
+}
 
 
 /* --------------------- */
@@ -267,7 +270,7 @@
 /* ------------------- */
 
 #footer_container {
-    background-color: #f5e1fd;
+    background-color: #fff;
     height: 40px;
     width: 100%;
     text-align: center;
